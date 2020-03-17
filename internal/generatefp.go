@@ -73,6 +73,17 @@ var fpCodeList = []fpCode{
 	},
 
 	fpCode{
+		function:          "PMapPtr",
+		codeTemplate:      basic.PMapPtr(),
+		dataTypes:         []string{"int", "int64", "int32", "int16", "int8", "uint", "uint64", "uint32", "uint16", "uint8", "string", "bool", "float32", "float64"},
+		generatedFileName: "pmapPtr.go",
+
+		//testTemplate:          basic.MapPtrTest(),
+		//testTemplateBool:      basic.MapPtrBoolTest(),
+		//generatedTestFileName: "mapPtr_test.go",
+	},
+
+	fpCode{
 		function:          "FilterPtr",
 		codeTemplate:      basic.FilterPtr(),
 		dataTypes:         []string{"int", "int64", "int32", "int16", "int8", "uint", "uint64", "uint32", "uint16", "uint8", "string", "bool", "float32", "float64"},
